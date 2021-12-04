@@ -15,7 +15,7 @@
   (function($) {
     var defaults = {
       images : [
-        '../img/firefly.jpg'
+        '../img/firefly.gif'
 	  ],
       total : 40
     };
