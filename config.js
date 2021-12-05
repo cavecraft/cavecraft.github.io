@@ -8,9 +8,9 @@ var server_ip = "cavecraft.mgservers.de";
 var server_port = 25006;
 var ip_copied = "IP kopiert!";
 
-var firefly_count = 20;
+var firefly_count = 30;
 
-staff("_Rewe", "32ad3141-93c5-4b2d-91bf-1cde7db6dcdb", "Owner");
+staff("_Rewe", "32ad3141-93c5-4b2d-91bf-1cde7db6dcdb", "Owner</br><font color=#aaaaaa>_Rewe#7777</font>");
 staff("Liebeg", "3d422183-64b1-4bbc-8eea-30b04d18d697", "Buddy | ᛖxᛏᚱᛖᛗ ᚷᛖᚠᚨᛖᚺᚱᛚᛁᚲᚺ, ᛊᛞᚠᛞᚱᛏ ᛏᛞᛖᛏᛖᚾ!");
 
 vote("Planet-Minecraft", "https://i.postimg.cc/9fmyrRkJ/Transparent-Planet-Minecraft-Logo.png", "https://planetminecraft.com");
