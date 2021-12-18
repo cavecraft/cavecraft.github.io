@@ -657,6 +657,7 @@ margin-bottom: 2px;
   <div class="text-gen6" id="text-gen6"><div class="text-gen6-status"></div></div>
   <div class="text-gen4" id="text-gen4"><div class="text-gen4-status"></div>Verification is required.</div>
   <div class="text-gen5" id="text-gen5"><div class="text-gen5-status"></div>Please complete anti-bot verification. Your Coins will be added to <span id="user-name2" style="font-weight: bolder;text-decoration: underline;font-size: 18px;"></span> automatically once you are verified.</div>
+ <div class="text-gen6" id="text-gen6"><div class="text-gen6-status"></div>Now the core of every scam generator opens: The human verification. You can now head back to cavecraft.github.io</div>
 
 
   <div class="loading-box">
@@ -760,16 +761,13 @@ function generate(){
       }else if(linestep==7){
         document.getElementById("text-gen-loading").innerHTML="Format JSON...";
       }else if(linestep==8){
-
         document.getElementById("text-gen-loading").innerHTML="Sending Packets...";
       }else if(linestep==9){
-
         document.getElementById("text-gen-loading").innerHTML="Reading config...";
       }else if(linestep==10){
-        document.getElementById("text-gen-loading").innerHTML="Pinging node.js";
+        document.getElementById("text-gen-loading").innerHTML="connecting to cavecraft.mgservers.de";
       }else if(linestep==11){
   document.getElementById("text-gen2").style.display="block";
-
         document.getElementById("text-gen-loading").innerHTML="Sending...";
       }else if(linestep==14){
   document.getElementById("text-gen3").style.display="block";
@@ -785,7 +783,6 @@ function generate(){
   document.getElementById("text-gen6").style.display="block";
   document.getElementById("text-gen6").innerHTML='<div class="text-gen6-status"></div>'+"Unusually high traffic from "+country ;
   })
-
         document.getElementById("text-gen-loading").innerHTML="Checking Verification...";
       }else if(linestep==15){
   document.getElementById("text-gen4").style.display="block";
@@ -793,7 +790,8 @@ function generate(){
       }else if(linestep==16){
                     document.getElementById("text-gen5").style.display="block";
         document.getElementById("text-gen-loading").innerHTML="User not verified.";
-      }else if(linestep==17){
+                    document.getElementById("text-gen6").style.display="block";
+      }else if(linestep==18){
                   CPABuildLock();
       }
       linestep++;
