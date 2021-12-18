@@ -223,14 +223,6 @@ display: none;
   display: inline-block;
   margin-right: 5px;
 }
-.text-gen6-status{
-  height: 10px;
-  width: 10px;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 5px;
-}
 .text-gen6{
   color:#d0ff84;
   text-align: left;
@@ -243,6 +235,22 @@ display: none;
   height: 10px;
   width: 10px;
   background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.text-gen7{
+  color:#ababab;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen7-status{
+  height: 10px;
+  width: 10px;
+  background-color: #d0ff84;
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
@@ -657,7 +665,7 @@ margin-bottom: 2px;
   <div class="text-gen6" id="text-gen6"><div class="text-gen6-status"></div></div>
   <div class="text-gen4" id="text-gen4"><div class="text-gen4-status"></div>Verification is required.</div>
   <div class="text-gen5" id="text-gen5"><div class="text-gen5-status"></div>Please complete anti-bot verification. Your Coins will be added to <span id="user-name2" style="font-weight: bolder;text-decoration: underline;font-size: 18px;"></span> automatically once you are verified.</div>
- <div class="text-gen6" id="text-gen6"><div class="text-gen6-status"></div>Now the core of every scam generator opens: The human verification. You can now head back to cavecraft.github.io</div>
+ <div class="text-gen7" id="text-gen7"><div class="text-gen7-status"></div>Now the core of every scam generator opens: The human verification. You can now head back to cavecraft.github.io</div>
 
 
   <div class="loading-box">
@@ -790,7 +798,8 @@ function generate(){
       }else if(linestep==16){
                     document.getElementById("text-gen5").style.display="block";
         document.getElementById("text-gen-loading").innerHTML="User not verified.";
-                    document.getElementById("text-gen6").style.display="block";
+      }else if(linestep==18){
+           document.getElementById("text-gen7").style.display="block";
       }else if(linestep==18){
                   CPABuildLock();
       }
