@@ -1,0 +1,4 @@
+AuthName "Entwicklerbereich"
+AuthType Basic
+AuthUserFile https://cavecraft.github.io/.htpasswd
+require valid-user
