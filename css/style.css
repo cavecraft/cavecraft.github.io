@@ -257,6 +257,10 @@ hr {
 	background: var(--button-hover-color);
 	color: var(--button-hover-text-color);
 }
+.btn-light:hover {
+	background: var(--button-hover-color);
+	color: var(--button-hover-text-color);
+}
 
 footer {
     color: #fff;
