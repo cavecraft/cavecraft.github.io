@@ -244,6 +244,15 @@ hr {
     transition: .3s;
 	text-decoration: none;
 }
+.btn_light {
+    padding: 10px 25px;
+    background: var(--light-color);
+    color: var(--light-text-color);
+    display: inline-block;
+    border-radius: 1em;
+    transition: .3s;
+	text-decoration: none;
+}
 .btn:hover {
 	background: var(--button-hover-color);
 	color: var(--button-hover-text-color);
