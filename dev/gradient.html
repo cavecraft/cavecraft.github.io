@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<!-- Start of Discord Site Embed Settings -->
+  <title>CaveCraft</title>
+  <meta content="https://cavecraft.github.io/index.html" property="og:url" />
+  <meta content="CaveCraft" property="og:title" />
+  <meta content="CaveCraft ist ein kleiner Minecraft-Server. Wir bieten euch eine Freebuildwelt, eine klassische Plotwelt, PVP uvm." property="og:description" />
+  <meta content="#617b64" data-react-helmet="true" name="theme-color" />
+  <meta content="https://i.ibb.co/9Vbp9Py/cc.png" property="og:image" />
+<!--End of Discord Site Embed Settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="News | CaveCraft">
+  <link rel="shortcut icon" href="https://cavecraft.github.io/img/favicon.ico" type="image/icon">
+  <link rel="icon" href="https://cavecraft.github.io/img/favicon.ico" type="image/icon">
+  <meta name="keywords" content="Minecraft, MC, CaveCraft">
+
+  <!-- Edit this to change staff cards! -->
+  <script id="staff-template" type="text/template">
+    <div class="staff-card shrink">
+      <img src="https://crafatar.com/avatars/{{ uuid }}">
+      <h3>{{ name }}</h3>
+      <h4>{{ rank }}</h4>
+    </div>
+  </script>
+
+  <script id="vote-template" type="text/template">
+    <div class="vote-card shrink shrink-dark">
+      <img src="{{ image }}">
+      <h3>{{ service }}</h3>
+      <h4><a href="{{ link }}" class="btn">Voten</a></h4>
+    </div>
+  </script>
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
+  <link rel="stylesheet" href="https://cavecraft.github.io/css/style.css">
+  <link rel="stylesheet" href="https://cavecraft.github.io/config.css">
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+
+  <header>
+    <div class="hero" id="hero" style="height:15vh">
+      <h1>Beispielseite</h1>
+    </div>
+  </header>
+
+  <section id="header" class="dark">
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="https://cavecraft.github.io/index.html">Home</a></li>
+        <li><a href="http://cavecraftforum.xobor.de/">Forum</a></li>
+        <li><a href="https://cavecraft.github.io/discord.html">Discord</a></li>
+        <li><a href="https://cavecraft.github.io/news.html">News</a></li>
+<!--        <li><a href="mgs.html">Partner <img src="https://cavecraft.github.io/img/partner.png" width="30px" heigth="30px" alt="Partner Icon" style="vertical-align:middle"></a></li>
+-->
+        <li><a href="https://cavecraft-server.enjin.com/externalwiki">Wiki</a></li>
+      </ul>
+    </nav>
+  </section>
+    <div id="header">
+      <h1 id="title">PlayMC RGB</h1>
+      <p id="graylabel1" class="gray" style="padding-bottom: 10px;">Lekka Local Hosted Minecraft Hex Gradient Nickname Creator!</p>
+    </div>
+
+    <div id="input" class="col-md-2" style="padding-left: 0;">
+      <label id="label1" for="color1">First Hex Color</label>
+      <input style="border-radius: 10px;" class="form-control col-md-2" id="color1" name="color1" value="FBAE53" data-jscolor="{preset:'small dark', position:'right'}" oninput="updateSpitter(event)" onchange="updateSpitter(event)">
+      <label id="label2" for="color2">Second Hex Color</label>
+      <input style="border-radius: 10px;" class="form-control col-md-1" id="color2" name="color2" value="2EE4FD" data-jscolor="{preset:'small dark', position:'right'}" oninput="updateSpitter(event)" onchange="updateSpitter(event)">
+      <label id="label3" for="steps">Nickname</label>
+      <input style="border-radius: 10px;" class="form-control col-md-2" id="nickname" name="nickname" type="text" placeholder="Message" value="Nickname" oninput="updateSpitter(event);" onchange="updateSpitter(event)">
+      <div id="options">
+        <div id="typeslist">
+          <label style="margin-bottom: 0; margin-top: 15px;">Type</label>
+          <select style="width:100%; border-radius: 10px; padding-right: 6px; padding-left: 6px; padding-top: 6px; padding-bottom: 6px;" type="select" id="types" onchange="rgbtype = this.options[this.selectedIndex].innerText; updateSpitter(event);">
+            <option value='0'>Nickname (&#rrggbb)</option>
+            <option value='1'>LuckPerms ({#rrggbb})</option>
+<!---             <option value='2'>Other (&x&r&r&g&g&b&b)</option> -->
+<!---             <option value='3'>/nick (&#rrggbb)</option> -->
+<!---             <option value='4'>/nick (&x&r&r&g&g&b&b)</option> -->
+<!---             <option value='5'>/ranknick (&x&r&r&g&g&b&b)</option> -->
+<!---             <option value='6'>Console (§x§r§r§g§g§b§b)</option> -->
+          </select>
+        </div>
+        <div id="bald">
+          <input type="checkbox" id="bold" onclick="updateSpitter(event);"></input>
+          <label for="bold" style="margin-bottom: 0; margin-top: 0;"> Bold output</label>
+        </div>
+        <div id="italy">
+          <input type="checkbox" id="italics" onclick="updateSpitter(event);"></input>
+          <label for="italics" style="margin-bottom: 0; margin-top: 0;"> Italic output</label>
+        </div>
+        <div id="line">
+          <input type="checkbox" id="underline" onclick="updateSpitter(event);"></input>
+          <label for="underline" style="margin-bottom: 0; margin-top: 0;"> Underlined output</label>
+        </div>
+        <div id="lineon">
+          <input type="checkbox" id="strike" onclick="updateSpitter(event);"></input>
+          <label for="strike" style="margin-bottom: 0; margin-top: 0;"> Striked output</label>
+        </div>
+        <div id="appearance">
+          <input type="checkbox" id="darkmode" onclick="darkMode();"></input>
+          <label for="darkmode" style="margin-bottom: 0; margin-top: 0;"> Dark Mode</label>
+        </div>
+      </div>
+    </div>
+    <div id="output">
+      <label id="label4" for="spitter">Output</label>
+      <label id="graylabel2" class="gray" for="spitter" style="font-weight: normal;">This is what you put in the chat. Click on it to copy.</label>
+      <pre id="spitter" class="pp" style="border-radius: 10px; white-space: pre-wrap; height: 95px; margin-right: 15px; font-family: MinecraftRegular;" onclick="copyTextToClipboard(document.getElementById('spitter').innerText);"></pre>
+      <p id="error" style="display: none; margin-bottom: 10px;">This is more than 256 characters and may not fit in the chat box. You may ignore this if you're using a server console.</p>
+    </div>
+    <h2>Preview:</h2>
+    <div id="coloredNick" class="minecraft" style="word-wrap: break-word;"></div>
+
+    <script src="https://cavecraft.github.io/js/script.js"></script>
+    <script src="https://cavecraft.github.io/js/jscolor.js"></script>
+  <footer class="light">
+    <!-- DO NOT REMOVE -->
+    <a href="https://client.olliejw.me">Theme made by OllieJW</a>
+    <!-- END DO NOT REMOVE -->
+    <p>Copyright &copy; {{server_name}} 2021</p>
+  </footer>
+  </script>
+
+</body>
