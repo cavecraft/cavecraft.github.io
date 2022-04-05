@@ -255,7 +255,7 @@ hr {
 }
 btn-disabled {
     padding: 10px 25px;
-    background: #555555;
+    background: var(--button-disabled-color);
     color: var(--button-text-color);
     display: inline-block;
     border-radius: 1em;

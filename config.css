@@ -11,6 +11,7 @@
   --light-text-color: #24272b; /* Colour of text in light section */
   
   --button-color: #24272b; /* Colour of buttons */
+  --button-disabled-color: #545454; /* Colour of buttons */
   --button-text-color: #fff; /* Colour of the text in buttons */
   --button-hover-color: #2b6ed9; /* Colour of button when hovered over */
   --button-hover-text-color: #fff; /* Colour of text in button when hovered over */
