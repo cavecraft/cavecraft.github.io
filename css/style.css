@@ -270,6 +270,9 @@ hr {
 	background: var(--button-hover-color);
 	color: var(--button-hover-text-color);
 }
+.btn-disabled:hover {
+	cursor: not-allowed;
+}
 footer {
     color: #fff;
     display: flex;
