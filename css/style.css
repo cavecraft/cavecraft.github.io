@@ -253,7 +253,7 @@ hr {
     transition: .3s;
 	text-decoration: none;
 }
-btn-disabled {
+.btn-disabled {
     padding: 10px 25px;
     background: var(--button-disabled-color);
     color: var(--button-text-color);
