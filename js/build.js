@@ -34,7 +34,7 @@ let warning = `
         <p>
           Diese Seite ist zurzeit aus Wartungsgründen nicht verfügbar. Normalerweise sollte eine automatische Weiterleitung erfolgen
           <br><br>
-          <a href="https://olliejw.me/tos.html">Klick mich</a>
+          <a href="https://cavecraft.github.io/maintenance">Klick mich</a>
         </p>
       </div>
     </div>
