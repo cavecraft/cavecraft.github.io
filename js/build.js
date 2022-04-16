@@ -41,7 +41,7 @@ let warning = `
   </div>
 `
 
-if (1 !== 2) {
+if (window.tosAgreed !== true) {
   $("head").prepend(style)
   $("body").append(warning)
 }
