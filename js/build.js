@@ -29,19 +29,19 @@ let style = `
 let warning = `
   <div id="popup" class="lw-overlay">
     <div class="lw-popup">
-      <h2>Warning!</h2>
+      <h2>Achtung!</h2>
       <div class="lw-content">
         <p>
           Diese Seite ist zurzeit aus Wartungsgründen nicht verfügbar. Normalerweise sollte eine automatische Weiterleitung erfolgen
           <br><br>
-          <a href="https://cavecraft.github.io/maintenance">Klick mich</a>
+          <center><a href="https://cavecraft.github.io/maintenance">Klick mich</a></center>
         </p>
       </div>
     </div>
   </div>
 `
 
-if (window.tosAgreed !== true) {
+if (window.pageOnline !== true) {
   $("head").prepend(style)
   $("body").append(warning)
 }
