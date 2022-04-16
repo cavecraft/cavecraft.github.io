@@ -41,7 +41,7 @@ let warning = `
   </div>
 `
 
-if (window.pageOnline !== true) {
+if (window.pageBlocked !== false) {
   $("head").prepend(style)
   $("body").append(warning)
 }
