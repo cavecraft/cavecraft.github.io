@@ -7,7 +7,7 @@ let style = `
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(1, 1, 1, 1);
   }.lw-overlay:target {
     visibility: visible;
     opacity: 1;
@@ -41,7 +41,7 @@ let warning = `
   </div>
 `
 
-if (window.pageBlocked == true) {
+if (window.pageOnline !== true) {
   $("head").prepend(style)
   $("body").append(warning)
 }
