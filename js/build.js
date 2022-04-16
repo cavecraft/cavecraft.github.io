@@ -41,7 +41,7 @@ let warning = `
   </div>
 `
 
-if (window.pageOnline !== true) {
+if (1 !== 2) {
   $("head").prepend(style)
   $("body").append(warning)
 }
