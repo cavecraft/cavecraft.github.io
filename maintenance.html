@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<!-- Start of Discord Site Embed Settings -->
+  <title>News | CaveCraft</title>
+  <meta content="https://cavecraft.github.io/index.html" property="og:url" />
+  <meta content="CaveCraft" property="og:title" />
+  <meta content="CaveCraft ist ein kleiner Minecraft-Server. Wir bieten euch eine Freebuildwelt, eine klassische Plotwelt, PVP uvm." property="og:description" />
+  <meta content="#617b64" data-react-helmet="true" name="theme-color" />
+  <meta content="https://i.ibb.co/9Vbp9Py/cc.png" property="og:image" />
+<!--End of Discord Site Embed Settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="News | CaveCraft">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/icon">
+  <link rel="icon" href="img/favicon.ico" type="image/icon">
+  <meta name="keywords" content="Minecraft, MC, CaveCraft">
+
+  <!-- Edit this to change staff cards! -->
+  <script id="staff-template" type="text/template">
+    <div class="staff-card shrink">
+      <img src="https://crafatar.com/avatars/{{ uuid }}">
+      <h3>{{ name }}</h3>
+      <h4>{{ rank }}</h4>
+    </div>
+  </script>
+
+  <script id="vote-template" type="text/template">
+    <div class="vote-card shrink shrink-dark">
+      <img src="{{ image }}">
+      <h3>{{ service }}</h3>
+      <h4><a href="{{ link }}" class="btn">Voten</a></h4>
+    </div>
+  </script>
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+
+  <header>
+    <div class="hero" id="hero" style="height:20vh">
+      <h1>CaveCraft</h1>
+    </div>
+  </header>
+  <section class="light">
+    <h2>Der Server ist aktuell im Aufbau.</h2>
+    <div id="news">
+      <div class="news-card">
+        <p><font color="white">Dies wird noch etwas dauern. Bitte schau in ein paar Wochen erneut vorbei.</font></p>
+        <p><font color="white">Wenn wir etwas weiter sind, wird hier ebenfalls ein Discord-Link angegeben.</font></p>
+      </div>
+</div>
+<p> </p>
+<div class="buttons">
+  <a href="https://www.youtube.com/watch?v=SpZ2FsEfwP4" class="btn">Vorschauvideo</a>
+  <a class="btn-disabled">Discord</a>
+</div>
+  </section>
+  <footer class="dark">
+    <!-- DO NOT REMOVE -->
+    <a href="https://client.olliejw.me">Theme made by OllieJW</a>
+    <!-- END DO NOT REMOVE -->
+    <p>Copyright &copy; {{server_name}} 2021</p>
+  </footer>
+  </script>
+
+</body>
