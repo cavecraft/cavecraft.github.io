@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <!-- Start of Discord Site Embed Settings -->
-  <title>Chat - Test</title>
+  <title>Chat | CaveCraft</title>
   <meta content="https://cavecraft.github.io/index.html" property="og:url" />
   <meta content="CaveCraft" property="og:title" />
   <meta content="CaveCraft ist ein kleiner Minecraft-Server. Wir bieten euch eine Freebuildwelt, eine klassische Plotwelt, PVP uvm." property="og:description" />
@@ -9,11 +9,15 @@
   <meta content="https://i.ibb.co/9Vbp9Py/cc.png" property="og:image" />
 <!--End of Discord Site Embed Settings -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="title" content="News | CaveCraft">
+  <meta name="title" content="Chat | CaveCraft">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/icon">
   <link rel="icon" href="img/favicon.ico" type="image/icon">
   <meta name="keywords" content="Minecraft, MC, CaveCraft">
-
+ <style>
+   .w-full {
+    width: 100%;
+}
+ </style>
   <!-- Edit this to change staff cards! -->
   <script id="staff-template" type="text/template">
     <div class="staff-card shrink">
@@ -48,20 +52,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="config.css">
-  <script src="https://giscus.app/client.js"
-  data-repo="cavecraft/cavecraft.github.io"
-  data-repo-id="R_kgDOGezCIA"
-  data-category="Website Chat"
-  data-category-id="DIC_kwDOGezCIM4COz2t"
-  data-mapping="url"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="dark"
-  data-lang="de"
-  crossorigin="anonymous"
-  async>
-</script>
 </head>
 
 <body>
@@ -71,14 +61,34 @@
   <script id="template" type="text/x-handlebars-template">
 
   <header>
-    <div class="hero" id="hero" style="height:20vh">
-      <h1>CaveCraft</h1>
+    <div class="hero" id="hero" style="height:15vh">
+      <h1>Chat</h1>
     </div>
   </header>
+
+  <section id="header" class="dark">
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+<!--        <li><a href="http://cavecraftforum.xobor.de/">Forum</a></li>
+-->
+        <li><a href="discord.html">Discord</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="store.html">Store</a></li>
+<!--        <li><a href="mgs.html">Partner <img src="img/partner.png" width="30px" heigth="30px" alt="Partner Icon" style="vertical-align:middle"></a></li>
+-->
+<!--        <li><a href="https://cavecraft-server.enjin.com/externalwiki">Wiki</a></li>
+-->
+      </ul>
+    </nav>
+  </section>
   <section class="light">
-    <h2>Der Server ist aktuell im Aufbau.</h2><br>
-    <iframe class="giscus-frame" title="Comments" scrolling="no" src="https://giscus.app/de/widget?origin=https%3A%2F%2Fcavecraft.github.io%2F&amp;session=&amp;theme=light&amp;reactionsEnabled=1&amp;emitMetadata=0&amp;inputPosition=top&amp;repo=cavecraft%2Fcavecraft.github.io&amp;repoId=R_kgDOGezCIA&amp;category=WebsiteChat&amp;categoryId=DIC_kwDOGezCIM4COz2t&amp;description=&amp;term=INDEX" style="height: 6094.5px;"></iframe>
-<script src="https://giscus.app/client.js"
+    <div id="info">
+      <p>Test</p>
+    </div>
+    <div id="chat" class="w-full">
+      <iframe class="giscus-frame" title="Chat" scrolling="no" src="https://giscus.app/de/widget?origin=https%3A%2F%2Fcavecraft.github.io%2F&amp;session=&amp;theme=light&amp;reactionsEnabled=1&amp;emitMetadata=0&amp;inputPosition=top&amp;repo=cavecraft%2Fcavecraft.github.io&amp;repoId=R_kgDOGezCIA&amp;category=WebsiteChat&amp;categoryId=DIC_kwDOGezCIM4COz2t&amp;description=&amp;term=INDEX" style="height: 6094.5px;"></iframe>
+      <script src="https://giscus.app/client.js"
         data-repo="cavecraft/cavecraft.github.io"
         data-repo-id="R_kgDOGezCIA"
         data-category="Website Chat"
@@ -92,8 +102,9 @@
         crossorigin="anonymous"
         async>
 </script>
+    </div>
   </section>
-  <footer class="dark">
+  <footer class="light">
     <!-- DO NOT REMOVE -->
     <a href="https://client.olliejw.me">Theme made by OllieJW</a>
     <!-- END DO NOT REMOVE -->
