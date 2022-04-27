@@ -1,3 +1,4 @@
 {
-    "origins": ["https://giscus.app"]
+    "origins": ["https://cavecraft.github.io"],
+    "defaultCommentOrder": "newest"
 }
