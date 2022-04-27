@@ -20,6 +20,24 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/icon">
   <link rel="icon" href="img/favicon.ico" type="image/icon">
   <meta name="keywords" content="Minecraft, MC, CaveCraft">
+  <style>
+    .w-full {
+    width: 80%;
+    justify-content: center;
+  }
+   .giscus, .giscus-frame {
+    width: 100%;
+    min-height: 150px;
+  }
+  .giscus-frame {
+    border: none;
+    color-scheme: normal;
+  }
+  .my-8 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  </style>
 
   <!-- Edit this to change staff cards! -->
   <script id="staff-template" type="text/template">
@@ -176,9 +194,12 @@
     <h1>Community</h1>
    <br>
    <br>
-    <center><img src="img/social-discord.png" width="700px" class="enlarge">
+    <center><img src="img/social-discord.png" width="700px" class="enlarge"></center>
     <br>
     <br>
+    <div id="chat" class="w-full">
+      <iframe class="giscus-frame" title="Chat" scrolling="no" src="https://giscus.app/de/widget?origin=https%3A%2F%2Fcavecraft.github.io%2F&amp;session=&amp;theme=dark&amp;reactionsEnabled=1&amp;emitMetadata=0&amp;inputPosition=top&amp;repo=cavecraft%2Fcavecraft.github.io&amp;repoId=R_kgDOGezCIA&amp;category=WebsiteChat&amp;categoryId=DIC_kwDOGezCIM4COz2t&amp;description=&amp;term=INDEX" style="height: 500.5px;"></iframe>
+    </div>
     <div class="buttons">
       <a href="discord.html" class="btn">Discord</a>
       <a class="btn-disabled">Forum</a>
