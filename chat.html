@@ -95,14 +95,9 @@
       </ul>
     </nav>
   </section>
-  <section class="dark">
-    <div id="regeln">
-    <h2>Chatregeln</h2>
-      <p>
-        <b>-</b>Regel 1<br>
-        <b>-</b>Regel 2<br>
-        <b>-</b>Regel 3<br>
-      </p>
+  <section class="light">
+    <div class="buttons">
+      <button onclick="showRules()">Regeln</button>
     </div>
     <div id="chat" class="w-full">
     </script>
@@ -115,7 +110,7 @@
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="dark"
+        data-theme="light"
         data-lang="de"
         crossorigin="anonymous"
         async>
@@ -130,5 +125,9 @@
     <p>Copyright &copy; {{server_name}} 2022</p>
   </footer>
   </script>
-
+  <script>
+    function myFunction() {
+      alert("I am an alert box!");
+    }
+    </script>    
 </body>
