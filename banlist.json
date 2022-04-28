@@ -1,0 +1,21 @@
+{
+    "schema": {
+        "playername": {
+            "reason": "Banngrund",
+            "uuid": "UUID des gebannten Spielers",
+            "datestamp": "Datum des Banns (Bei Spielern die aufgrund von Name und Skin gebannt sind war dies zum Bannzeitgrund ein Problem)"
+        }
+    },
+
+    "AntiFurry": {
+        "reason": "Idiot (Siehe Name)",
+        "uuid": "91ce40e3-583e-4dfc-8043-5372af382188",
+        "datestamp": "2022-04-20 16:41:13 +0200"
+    },
+
+    "Antifur": {
+        "reason": "Vollidiot (Siehe Name und Skin)",
+        "uuid": "89a50542-b298-488b-bdb6-184efc5f7673",
+        "datestamp": "2022-04-20 16:47:54 +0200"
+    }
+}
