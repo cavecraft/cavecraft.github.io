@@ -62,8 +62,7 @@ img[src="/assets/b802e9af134ff492276d94220e36ec5c.svg"] {
   transition-duration: 0.5s;
 }
 /* Verified dev */
-div:hover > img[src="/assets/4441e07fe0f46b3cb41b79366236fca6.svg"] {
-  animation: devbadge 5s infinite normal linear;
+img[src="/assets/4441e07fe0f46b3cb41b79366236fca6.svg"] {
   padding: var(--badge-size) var(--badge-size) 0px 0px;
   overflow: hidden;
   box-sizing: border-box;
