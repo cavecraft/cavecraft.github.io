@@ -31,7 +31,7 @@ img[src="/assets/9f00b18e292e10fc0ae84ff5332e8b0b.svg"] {
   background-image: url("https://discord.com/assets/58f11abcf3c13812bff969baaeb84d82.svg");
 }
 /* Nitro badge */
-img[src="/assets/24d05f3b46a110e538674edbac0db4cd.svg"] {
+img[src=var(--nitro-badge)] {
   transition-duration: 1s;
   filter: contrast(1) hue-rotate(0deg);
 }
