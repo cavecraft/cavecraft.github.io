@@ -3,10 +3,6 @@
   justify-content: flex-end;
   margin: var(--badge-margin);
 }
-.clickable-1knRMS > img {
-  height: var(--badge-size) !important;
-  width: var(--badge-size) !important;
-}
 /* Hype Squad Badges*/
 img[src="/assets/e666a84a7a5ea2abbbfa73adf22e627b.svg"] {
   transition-delay: 2s;
@@ -49,9 +45,8 @@ img[src="/assets/e07c08cdc72bcc78b69c76d2c7ceb344.svg"],
 img[src="/assets/c7f26927db5e7806790f4e968038630a.svg"],
 img[src="/assets/c6d88d1d12afe03bdc4ebb747f8d196b.svg"],
 img[src="/assets/d96ed283b74de75692487b7499fb8d09.svg"] {
-  height: calc(var(--badge-size) - 2.59px) !important;
-  width: calc(var(--badge-size) - 2.59px) !important;
-  transform: translate(0.5px, 1.9px);
+  height: var(--badge-size) !important;
+  width: var(--badge-size) !important;
 }
 /* Early Supporter */
 img[src="/assets/b802e9af134ff492276d94220e36ec5c.svg"] {
